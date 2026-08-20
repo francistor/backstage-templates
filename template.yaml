@@ -4,6 +4,8 @@ metadata:
   name: python-template
   title: Python flask template
   description: Provisions a minimalistic flask application
+  annotations:
+    backstage.io/techdocs-ref: value
 spec:
   owner: team-default
   type: service
