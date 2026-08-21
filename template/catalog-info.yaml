@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ${{values.app_name}}
+  description: The ${{values.app_name}} service
+  # Example for optional annotations
+  annotations:
+    github.com/project-slug: francistor/${{values.app_name}}
+spec:
+  type: service
+  owner: team-default
+  lifecycle: experimental
