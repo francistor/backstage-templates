@@ -1,4 +1,0 @@
-Hello.
-
-The name of the component is ${{values.app_name}}, for the ${{values.environment}} environment.
-

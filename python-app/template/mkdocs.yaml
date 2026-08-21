@@ -1,6 +1,6 @@
-site_name: 'Python-app'
-site_description: 'Documentation for python-app'
-repo_url: https://github.com/francistor/python-app
+site_name: ${{values.app_name}}
+site_description: 'Documentation for ${{values.app_name}}'
+repo_url: https://github.com/francistor/${{values.app_name}}
 edit_uri: edit/main/docs
 
 plugins:

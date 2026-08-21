@@ -1,6 +1,6 @@
 # Python app
 
-Doc for python app
+Doc for ${{values.app_name}}$
 
 ```python
 def hello():

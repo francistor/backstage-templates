@@ -19,7 +19,9 @@ def health():
     return jsonify({
         "status": "up",
         "weather": "fine <6",
-        "deployed_on": "kubernetes"
+        "deployed_on": "kubernetes",
+        "environment": ${{values.environment}},
+        "application name": ${{values.app_name}}
     }), 200
 
 if __name__ == "__main__":
