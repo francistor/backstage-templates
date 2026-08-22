@@ -20,7 +20,7 @@ def health():
         "status": "up",
         "weather": "fine <6",
         "deployed_on": "kubernetes",
-        "environment": ${{values.environment}},
+        "environment": ${{values.app_env}},
         "application name": ${{values.app_name}}
     }), 200
 
