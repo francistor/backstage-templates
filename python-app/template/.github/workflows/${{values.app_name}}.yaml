@@ -70,7 +70,8 @@ jobs:
           argocd login argocd-server.argocd --insecure --username admin --password ${{ '${{ secrets.ARGOCD_PASSWORD }}' }}
           argocd repo list | grep -q $REPO || \
           argocd repo add $REPO
-          
+          pwd
+          ls
           argocd app get ${{values.app_name}} || \
           argocd app create ${{values.app_name}} \
             --repo $REPO \
