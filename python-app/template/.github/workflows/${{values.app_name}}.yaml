@@ -75,11 +75,12 @@ jobs:
           argocd app create ${{values.app_name}} \
             --repo $REPO \
             --path charts/${{values.app_name}} \
-            --dest-namespace ${{values.namespace}} \\
-            --dest-server https://kubernetes.default.svc \\
-            --values values-${{values.app_env}} \\
-            --revision master \\
-            --sync-policy manual \\
+            --dest-namespace ${{values.namespace}} \
+            --dest-server https://kubernetes.default.svc \
+            --values values \
+            --values values-${{values.app_env}} \
+            --revision master \
+            --sync-policy manual \
             --sync-option CreateNamespace=true
 
       - name: Deploy to argocd
